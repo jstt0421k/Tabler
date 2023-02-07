@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Tabler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main-div">
+        <div id="main-left-div">
+            <div id="main-left-top-div">
+                <div id="main-left-top-profile-alt-div" style="position: relative">
+                    <div id="main-left-top-profile-div" style="position: absolute">
+                        <div id="main-left-top-profile-picture-div">
+                            <img id="main-left-top-profile-picture-img" src="./img/main-left-top-profile-picture-img.png">
+                        </div>
+                        <div id="main-left-top-profile-name-div">
+                            <h1 id="main-left-top-profile-name-text">김준성</h1>
+                            <h4 id="main-left-top-profile-name-subtext">@username</h4>
+                        </div>
+                        <div id="main-left-top-profile-credential-div">
+                            <h2 id="main-left-top-profile-credential-organization-text" style="font-weight:500">KAIST 부설<br>한국과학영재학교</h2>
+                            <h3 id="main-left-top-profile-credential-job-text" style="font-weight:500">Student, 23-029</h3>
+                            <h3 id="main-left-top-profile-credential-email-text" style="font-weight:200">23-029@ksa.hs.kr</h3>
+                            <h3 id="main-left-top-profile-credential-phone-text" style="font-weight:200">Tel. 010-1234-5678</h3>
+                        </div>
+                        <div id="main-left-top-profile-buttons-div">
+                            <button id="main-left-top-profile-settings-button">Profile Settings</button>
+                            <button id="main-left-top-profile-share-button">Share Profile</button>
+                        </div>
+                    </div>
+                    <h2 id="main-left-top-profile-alt-title">프로필과 시간표 확인을 위해 학번을 입력하세요.</h2>
+                </div>
+            </div>
+            <div id="main-left-bottom-div">
+                <div id="main-left-bottom-container-div">
+                    <h3 id="main-left-bottom-container-title">Shortcuts</h3>
+                    <a href="https://www.ksa.hs.kr" target="_blank" class="main-left-bottom-links">- KSA Main Website</a><br>
+                    <a href="https://www.ksa.hs.kr" target="_blank" class="main-left-bottom-links">- Gaonnuri</a><br>
+                    <a href="https://www.ksa.hs.kr" target="_blank" class="main-left-bottom-links">- KSA Admission Page</a>
+                </div>
+            </div>
+        </div>
+        <div id="main-center-div">
+            <div id="main-center-container-div">
+                <div id="main-center-table-div">
+
+                </div>
+            </div>
+        </div>
+        <div id="main-right-div">
+            <div id="main-right-top-div">
+                <div id="main-right-top-container-div">
+                    <h2 id="main-right-top-clock-text">00 : 00</h3>
+                    <h4 id="main-right-top-date-text">Jan, 01, 2000</h4>
+                </div>
+            </div>
+            <div id="main-right-center-div">
+                <div id="main-right-center-container-div">
+                    <h3 id="main-right-center-container-title">Reminders</h3>
+                    <div id="main-right-center-reminder-container-div">
+                        <div class="main-right-center-reminder">→ Working on it..</div>
+                        <div class="main-right-center-reminder">→ You can add but can't remove..</div>
+                        <div class="main-right-center-reminder">→ ..and you can't save.</div>
+                    </div>
+                    <form id="main-right-center-reminder-form" onsubmit="addReminder(); return false;">
+                        <input type="text" placeholder="Enter your reminders.." id="main-right-center-reminder-input">
+                    </form>
+                </div>
+            </div>
+            <div id="main-right-bottom-div">
+                <div id="main-right-bottom-container-div">
+                    <h3 id="main-right-bottom-container-title">Settings</h3>
+                    <input type="text" id="main-right-bottom-container-input-1" placeholder="학번  ex) 23-029">
+                    <button id="main-right-bottom-container-button" onclick="render()">Render</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>

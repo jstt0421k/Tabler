@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+
+    background-image: url("./background.webp");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-left-div {
+    width: 25vw;
+    height: 100vh;
+
+    border: 0px solid black;
+}
+
+#main-left-top-profile-alt-div {
+    width: 19vw;
+    height: 55vh;
+    margin-left: 3vw;
+    margin-top: 8vh;
+    
+    border: 1px solid black;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    transition: transform .2s;
+}
+
+#main-left-top-profile-alt-div:hover {
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03); 
+}
+
+#main-left-top-profile-alt-title {
+    position: absolute;
+    top: 17vh;
+    font-family: 'Gowun Dodum', sans-serif;
+    width: 15vw;
+    margin-left: 2.5vw;
+    line-height: 7vh;
+}
+
+#main-left-top-profile-div {
+    width: 19vw;
+    height: 55vh;
+    
+    border: 1px solid black;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    transition: transform .2s;
+
+    visibility: hidden;
+}
+
+#main-left-top-profile-picture-div {
+    position: relative;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 15vh;
+    overflow: hidden;
+
+    border: 0px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2vh;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 0 0 3px rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+#main-left-top-profile-picture-img {
+    position: absolute;
+    height: 15vh;
+}
+
+#main-left-top-profile-name-div {
+    height: 8vh;
+    text-align: center;
+    line-height: 1.5vh;
+    border: 0px solid black;
+}
+
+#main-left-top-profile-name-text {
+    font-weight: 500;
+    font-size: 4vh;
+    letter-spacing: 0.4vw;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+#main-left-top-profile-name-subtext {
+    font-weight: 200;
+    font-size: 2vh;
+}
+
+#main-left-top-profile-credential-div {
+    height: 16vh;
+    text-align: center;
+    line-height: 1.5vh;
+    border: 0px solid black;
+}
+
+#main-left-top-profile-credential-organization-text {
+    margin-top: 0vh;
+    line-height: 3vh;
+    font-weight: 500;
+    font-size: 3vh;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+#main-left-top-profile-credential-job-text {
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+
+#main-left-top-profile-credential-email-text {
+    font-weight: 100;
+    font-size: 2vh;
+}
+
+#main-left-top-profile-credential-phone-text {
+    font-weight: 100;
+    font-size: 2vh;
+}
+
+#main-left-top-profile-buttons-div {
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    border: 0px solid black;
+}
+
+#main-left-top-profile-settings-button, #main-left-top-profile-share-button {
+    width:  8vw;
+    margin-left: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.7vh;
+    text-decoration: underline;
+    color: #26b8c5;
+    background: none;
+    
+    border: 0px solid black;
+}
+
+#main-left-bottom-container-div {
+    width: 19vw;
+    height: 25vh;
+    margin-left: 3vw;
+    margin-top: 4vh;
+    
+    border: 1px solid black;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+#main-left-bottom-container-div:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+
+#main-left-bottom-container-title {
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.main-left-bottom-links {
+    font-size: 2.2vh;
+    margin-left: 30px;
+    line-height: 4vh;
+    text-decoration: underline;
+    color: #0096a3;
+    
+}
+
+
+
+#main-center-div {
+    width: 50vw;
+    height: 100vh;
+
+    border: 0px solid black;
+}
+
+#main-center-container-div {
+    width: 50vw;
+    height: 84vh;
+    margin-top: 8vh;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+#main-center-container-div:hover {
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01); 
+}
+
+#main-center-table-div {
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+.timetable-box {
+    text-align: center;
+    line-height: 3vh;
+    font-size: 1.7vh;
+    font-family: 'Gowun Dodum', sans-serif;
+
+    width: 8.1vw;
+    height: 8.2vh;
+
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+.timetable-box:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.timetable-text {
+    margin-top: 1vh;
+}
+
+
+#main-right-div {
+    width: 25vw;
+    height: 100vh;
+
+    border: 0px solid black;
+}
+
+#main-right-top-container-div {
+    margin-top: 8vh;
+    height: 21vh;
+    width: 19vw;
+    margin-left: 3vw;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 100;
+
+    transition: transform .2s;
+}
+
+#main-right-top-container-div:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+
+#main-right-top-clock-text {
+    font-size: 4vh;
+}
+
+#main-right-top-date-text {
+    font-size: 2.4vh;
+}
+
+#main-right-center-container-div {
+    margin-top: 4vh;
+    height: 34vh;
+    width: 19vw;
+    margin-left: 3vw;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+#main-right-center-container-div:hover {
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03); 
+}
+
+#main-right-center-container-title {
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+#main-right-center-reminder-container-div {
+    border: 0px solid black;
+    width: 17vw;
+    height: 18vh;
+    margin-left: 1vw;
+    overflow-y:scroll;
+}
+
+#main-right-center-reminder-input {
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+    width: 16.8vw;
+    height: 4vh;
+    border-radius: 20px;
+    border: 0px solid black;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+#main-right-center-reminder-input::-webkit-input-placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vh;
+
+}
+
+.main-right-center-reminder {
+    height: 2vh;
+    font-size: 1.8vh;
+}
+
+#main-right-bottom-container-div {
+    margin-top: 4vh;
+    height: 20vh;
+    width: 19vw;
+    margin-left: 3vw;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+#main-right-bottom-container-div:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+
+#main-right-bottom-container-title {
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+#main-right-bottom-container-input-1 {
+    margin-left: 1vw;
+    margin-top: 0.7vh;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 20px;
+    border: 0px solid black;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4vh;
+
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
+
+#main-right-bottom-container-button {
+    font-size: 2vh;
+    font-family: 'Raleway';
+    width: 5vw;
+    height: 4vh;
+    margin-left: 0.6vw;
+    
+    background: rgba(134, 134, 134, 0.402);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    transition: transform .2s;
+}
